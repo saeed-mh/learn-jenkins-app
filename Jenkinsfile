@@ -19,7 +19,7 @@ pipeline {
                     ls -la
 
                     echo "Test Application"
-                    check build/index.html
+                    test -f build/index.html
                     npm test
                 '''
             }
